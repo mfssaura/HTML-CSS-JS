@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="calc_javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="calc.css" />
+  <link href="https://fonts.googleapis.com/css?family=Covered By Your Grace" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Main Container for Calculator-->
+  <div class="calculator-main-container">
+
+    <form name="form" action="index.html" method="post" class="form"  onsubmit="return calculate();">
+
+      <h2 style="color: #b3ffb3">C a l c u l a t o r</h2>
+
+        <!-- Input text fields -->
+
+        <div class="div-input-fields">
+          <div class="inputbox">
+              <div class="div-cell">
+                <label class="formlabels" name="textbox">Enter first number</label>
+              </div>
+              <div class="div-cell">
+                <input type="text" class="tbox" name="text_field1" id="tbox-id1" placeholder=" Enter first number"  onkeyup="return check_inbox(id,'e-box1');" required>
+                <div class="div-cell">
+                  <div class="errorbox" id="e-box1"></div>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="inputbox">
+            <div class="div-cell">
+              <label class="formlabels" name="textbox">Enter second number</label>
+            </div>
+            <div class="div-cell">
+              <input type="text" class="tbox" name="text_field2" id="tbox-id2" placeholder=" Enter second number"  onkeyup="return check_inbox(id,'e-box2');" required>
+              <div class="div-cell">
+                <div class="errorbox" id="e-box2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input RadioButtons -->
+
+        <div class="div-radio-buttons">
+          <input type="radio" name="operations" class="radio-buttons" value="add">
+          <img src="plus.png" width="25" height="25">
+
+          <input type="radio" name="operations" class="radio-buttons" value="sub">
+          <img src="minus.png" width="25" height="25">
+
+          <input type="radio" name="operations" class="radio-buttons" value="mul">
+          <img src="multi.png" width="25" height="25">
+
+          <input type="radio" name="operations" class="radio-buttons" value="div">
+          <img src="divide.png" width="25" height="25">
+
+          <div class="errorbox" id="e-box3"></div>
+        </div>
+
+        <!-- Submit button -->
+
+        <div class="submit">
+          <button class="calculate-button" id="calc">Calculate</button>
+        </div>
+
+        <!-- Result area -->
+
+        <div class="result">
+          <input type="text" class="result-box" name="result" id="res_field" value="" readonly>
+        </div>
+
+    </form>
+  </div>
+</body>
+</html>

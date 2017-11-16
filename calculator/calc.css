@@ -1,0 +1,102 @@
+  /*Style the main div container*/
+  .calculator-main-container {
+    border-radius: 10px;
+    border: 4px solid black;
+    width: 600px;
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    left: 25%;
+    top: 100px;
+    background-image: url("Wood-1024x576-hd-wallpapers.co.jpg");
+  }
+  /*Style the input boxes*/
+  .inputbox {
+    border: 2px solid white;
+    padding: 20px;
+  }
+  /*Style the error boxes*/
+  .errorbox {
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: pink;
+    padding: 5px;
+  }
+  /*Style form labels*/
+  .formlabels {
+    font-family: "Covered By Your Grace";
+    font-size: 20px;
+    border-top: 1px solid white;
+    border-bottom: 4px solid white;
+    border-left: 1px solid white;
+    color: white;
+    padding: 2px;
+  }
+
+  .div-input-fields {
+    display: table;
+    width: auto;
+  }
+  .inputbox {
+    display: table-row;
+    width: auto;
+  }
+  .div-cell {
+    float: left;
+    display: table-column;
+    width: 200px;
+  }
+
+  /*Editing the calculate button*/
+  .calculate-button {
+     width: 100px;
+     height: 50px;
+     font-size:12px;
+     color:white;
+     text-align:center;
+     background-color:#383838;
+     padding:10px;
+     border-radius: 10px;
+     left: 50px;
+     border: solid 2px black;
+     transition: box-shadow 0.3s, border 0.5s;
+   }
+
+   .calculate-button:hover {
+     background-color: black;
+     border: solid 2px brown;
+     box-shadow: 2px #969696;
+   }
+
+   /*Style the text box*/
+   .tbox {
+     width: 200px;
+     height: 25px;
+     border-radius: 5px;
+     border-color: lightgrey;
+     transition: box-shadow 0.3s,width 0.4s ease-in-out;
+     font-size: 15px;
+   }
+
+   .tbox:focus {
+     width: 250px;
+     box-shadow: 2px #969696;
+     background-color: lightbrown;
+     border-color: darkgrey;
+     box-shadow: 2px red;
+   }
+   .radio-buttons {
+     height: 25px;
+     width: 25px;
+   }
+   .result-box {
+     width:100px;
+     background-color: lightgreen;
+     border-style: none;
+   }
+   .result {
+     position: relative;
+     top: 10px;
+   }
