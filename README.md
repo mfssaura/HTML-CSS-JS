@@ -1,2 +1,2 @@
 # HTML-CSS-JS
-This file contains the javascript,html and css basic mini projects 
+This repo contains the javascript,html and css basic mini projects 
