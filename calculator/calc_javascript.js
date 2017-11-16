@@ -1,39 +1,3 @@
-  //function to check whether an input has proper set of digits
-  function check_inbox(id, e) {
-      var val=document.getElementById(id).value;
-      var regex=/^[+-]?([0-9]*[.])?[0-9]+$/;
-      if(regex.test(val)) {
-        document.getElementById(e).innerHTML="";
-        return true;
-      }
-      else {
-        document.getElementById(e).innerHTML="Invalid number!Please don't enter any space or alphanumeric characters";
-        return false;
-      }
-  }
-
-  function isblank(id, e) {
-      var x=document.getElementById(id).value;
-      if(x=="") {
-        document.getElementById(e).innerHTML="Enter a value";
-        return false;
-      }
-      else {
-        document.getElementById(e).innerHTML="";
-        return true;
-      }
-  }
-  //function to check whether radio buttons are clicked or not
-  function check_radio() {
-    var Radio_Button_Obj = document.form.operations;
-    for(var i=0; i<Radio_Button_Obj.length; i++) {
-        if(Radio_Button_Obj[i].checked ) {
-            return true;
-        }
-    }
-    return false;
-  }
-
   //main driver function to calculate the result
   function calculate() {
     if(!check_inbox('tbox-id1','e-box1')) {
@@ -75,4 +39,40 @@
       document.getElementById("res_field").value = Calculator[op](x,y);
       return false;
     }
+  }
+
+  //function to check whether an input has proper set of digits
+  function check_inbox(id, e) {
+      var val=document.getElementById(id).value;
+      var regex=/^[+-]?([0-9]*[.])?[0-9]+$/;
+      if(regex.test(val)) {
+        document.getElementById(e).innerHTML="";
+        return true;
+      }
+      else {
+        document.getElementById(e).innerHTML="Invalid number!Please don't enter any space or alphanumeric characters";
+        return false;
+      }
+  }
+
+  function isblank(id, e) {
+      var x=document.getElementById(id).value;
+      if(x=="") {
+        document.getElementById(e).innerHTML="Enter a value";
+        return false;
+      }
+      else {
+        document.getElementById(e).innerHTML="";
+        return true;
+      }
+  }
+  //function to check whether radio buttons are clicked or not
+  function check_radio() {
+    var RadioButtonObj = document.form.operations;
+    for(var i=0; i<RadioButtonObj.length; i++) {
+        if(RadioButtonObj[i].checked ) {
+            return true;
+        }
+    }
+    return false;
   }
