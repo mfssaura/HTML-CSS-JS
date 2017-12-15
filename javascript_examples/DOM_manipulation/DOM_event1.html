@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Introduction to DOM</title>
+  <script>
+    window.onload = function() {
+      var li = document.getElementsByTagName("li");
+      for ( var i = 0; i < li.length; i++ ) {
+        li[i].onmouseover = function() {
+          this.style.backgroundColor = 'blue';
+        };
+        li[i].onmouseout = function() {
+          this.style.backgroundColor = 'white';
+        };
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Introcution to the DOM</h1>
+  <p class="test">There are a number of reasons why the DOM is awesome. here are some:</p>
+  <ul>
+    <li id="everywhere">It can be found everywhere</li>
+    <li class="test">It's easy to use</li>
+    <li class="test">It can help you to find what you really want</li>
+  </ul>
+</body>
+</html>
